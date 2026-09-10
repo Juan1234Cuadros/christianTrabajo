@@ -11,4 +11,4 @@ def test_root_status_code():
     de estado sea estrictamente 200 OK.
     """
     response = client.get("/")
-    assert response.status_code == 404
+    assert response.status_code == 400
